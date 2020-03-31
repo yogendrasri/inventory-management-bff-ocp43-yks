@@ -5,7 +5,7 @@
 global: {}
 
 # The url to the Inventory Management Microservice (kube service name)
-serviceUrl: "inventory-management-svc-ocp43-yks:80"
+serviceUrl: "inventory-management-svc-oc43-yks:80"
 
 replicaCount: 1
 logLevel: "debug"

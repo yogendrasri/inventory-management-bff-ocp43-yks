@@ -137,11 +137,11 @@ spec:
                     npm run pact:publish --if-present
                 '''
             }
-            stage('Verify pact') {
+            /*stage('Verify pact') {
                 sh '''#!/bin/bash
                     npm run pact:verify --if-present
                 '''
-            }
+            }*/
             stage('Sonar scan') {
                 sh '''#!/bin/bash
 

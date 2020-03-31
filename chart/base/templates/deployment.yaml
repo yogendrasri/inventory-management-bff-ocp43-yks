@@ -28,8 +28,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           query { stockItems { name } }
-            - name: SERVICE_URL
-              value: {{ .Values.serviceUrl | quote }}
+            
           ports:
             - name: http
               containerPort: {{ .Values.image.port }}
